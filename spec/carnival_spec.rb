@@ -61,8 +61,8 @@ RSpec.describe Carnival do
 
       expect(carnival.most_popular_ride).to eq(ride1)
     end
-    
-    xit 'can tell what the most profitable ride was' do 
+
+    it 'can tell what the most profitable ride was' do 
       carnival = Carnival.new(duration: 14)
       visitor1 = Visitor.new('Bruce', 54, '$10')
       visitor2 = Visitor.new('Tucker', 36, '$5')
