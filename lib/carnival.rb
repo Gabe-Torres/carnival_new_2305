@@ -22,4 +22,12 @@ class Carnival
       ride.total_revenue
     end
   end
+
+  def carnival_total_revenue
+    total_revenue = 0
+    rides.sum do |ride|
+      total_revenue += ride.total_revenue
+    end
+    total_revenue
+  end
 end
